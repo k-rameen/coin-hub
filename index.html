@@ -19,7 +19,7 @@
       <tr>
         <th>Coin</th>
         <th>Face Value</th>
-        <th>Coin Weight (grams)</th>
+        <th>80% Coin Weight (grams)</th>
         <th>Silver Content (grams)</th>
         <th>Current Silver Price (per gram)</th>
         <th>Total Price</th>
@@ -101,7 +101,7 @@
         <td>$ 0.05</td>
         <td>4.54</td>
         <td>
-          <input type="number" step="0.01" placeholder="e.g 1.45" inputmode="decimal" id="silverNickel">
+          <input type="number" step="0.01" placeholder="e.g 1.45" inputmode="decimal" id="silverNickel" oninput="calculateNickelTotal()">
         </td>
         <td>
           <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput5" oninput="calculateNickelTotal()">
@@ -119,7 +119,7 @@
         <td>$ 0.01</td>
         <td>3.24</td>
         <td>
-          <input type="number" step="0.01" placeholder="e.g 1.45" inputmode="decimal" id="silverPenny">
+          <input type="number" step="0.01" placeholder="e.g 1.45" inputmode="decimal" id="silverPenny" oninput="calculatePennyTotal()">
         </td>
         <td>
           <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput6" oninput="calculatePennyTotal()">
