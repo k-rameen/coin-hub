@@ -4,13 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Coin Hub</title>
+  <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <script src="script.js"></script>
-  <h1>Coin Hub</h1>
   <table>
     <!-- first row header -->
     <thead>
@@ -45,7 +44,7 @@
       <tr>
         <td>
           <div class="coin">
-            <img src="https://www.mint.ca/globalassets/products/2024/l5/244686-50-cent-special-wrap-circulation-roll/244686_rev-1200.png?hash=638482732470000000" alt="Loonie/One Canadian Dollar">
+            <img src="https://www.mint.ca/globalassets/products/2024/l5/244686-50-cent-special-wrap-circulation-roll/244686_rev-1200.png?hash=638482732470000000" alt="Fifty Cent Canadian Coin">
             </div>
         </td>
         <td>$ 0.50</td>
@@ -61,7 +60,7 @@
       <tr>
         <td>
           <div class="coin">
-            <img src="https://imaginaire.com/docs/Z-2521M.JPG" alt="Loonie/One Canadian Dollar">
+            <img src="https://imaginaire.com/docs/Z-2521M.JPG" alt="Canadian Quarter">
             </div>
         </td>
         <td>$ 0.25</td>
@@ -77,7 +76,7 @@
       <tr>
         <td>
           <div class="coin">
-            <img src="https://upload.wikimedia.org/wikipedia/en/2/20/Canadian_Dime_-_reverse.png" alt="Loonie/One Canadian Dollar">
+            <img src="https://upload.wikimedia.org/wikipedia/en/2/20/Canadian_Dime_-_reverse.png" alt="Canadian Dime">
           </div>
         </td>
         <td>$ 0.10</td>
@@ -93,28 +92,36 @@
       <tr>
         <td>
             <div class="coin">
-              <img src="https://www.colonialacres.com/cdn/shop/files/2025SpecialWrapRollCollection-FirstStrikes5_REVF.png?v=1758220250" alt="Loonie/One Canadian Dollar">
+              <img src="https://www.colonialacres.com/cdn/shop/files/2025SpecialWrapRollCollection-FirstStrikes5_REVF.png?v=1758220250" alt="Canadian Nickel">
             </div>
         </td>
         <td>$ 0.05</td>
         <td>4.54</td>
-        <td id="content">0</td>
-        <td></td>
-        <td>$</td>
+        <td>
+          <input type="number" step="0.01" placeholder="e.g 1.45" inputmode="decimal" id="silverNickel">
+        </td>
+        <td>
+          <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput5" oninput="calculateNickelTotal()">
+        </td>
+        <td id="nickelPrice">$</td>
       </tr>
 
       <!-- sixth row / penny -->
       <tr>
         <td>
           <div class="coin">
-            <img src="https://upload.wikimedia.org/wikipedia/fr/5/5f/1_cent_Canada_revers.png" alt="Loonie/One Canadian Dollar">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/5/5f/1_cent_Canada_revers.png" alt="Penny">
           </div>
         </td>
         <td>$ 0.01</td>
         <td>3.24</td>
-        <td id="content">0</td>
-        <td></td>
-        <td>$</td>
+        <td>
+          <input type="number" step="0.01" placeholder="e.g 1.45" inputmode="decimal" id="silverPenny">
+        </td>
+        <td>
+          <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput6" oninput="calculatePennyTotal()">
+        </td>
+        <td id="pennyPrice">$</td>
       </tr>
     </tbody>
     
