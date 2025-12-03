@@ -50,3 +50,28 @@ function calculateDimeTotal() {
   document.getElementById("dimePrice").innerText = "$" + totalPrice.toFixed(2);
 }
 
+//nickel
+function calculateNickelTotal() {
+  let silverPrice = document.getElementById("silverNickel").value;
+  silverPrice = parseFloat(silverPrice);
+  
+  let total = document.getElementById("userInput5").value;
+  total = parseFloat(total);
+
+    let totalPrice = total*silverPrice;
+
+  document.getElementById("nickelPrice").innerText = "$" + totalPrice.toFixed(2);
+}
+
+//penny
+function calculatePennyTotal() {
+  let total = document.getElementById("userInput6").value;
+  total = parseFloat(total);
+
+  let silverPrice = document.getElementById("silverPenny").value;
+  silverPrice = parseFloat(silverPrice);
+
+  let totalPrice = total*silverPrice;
+
+  document.getElementById("pennyPrice").innerText = "$" + totalPrice.toFixed(2);
+}
