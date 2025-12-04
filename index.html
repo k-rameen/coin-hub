@@ -35,12 +35,12 @@
           </div>
         </td>
         <td>$ 1.00</td>
-        <td>23.33</td>
+        <td class="weight">23.33</td>
         <td class="content" data-row="loonie">18.66</td>
-        <td rowspan="6">
+        <td rowspan="7">
           <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput" oninput="calculateCoinTotal()">
         </td>
-        <td id="looniePrice">$</td>
+        <td id="looniePrice" class="price">$</td>
       </tr>
       
       <!-- second row / fifty -->
@@ -51,12 +51,12 @@
             </div>
         </td>
         <td>$ 0.50</td>
-        <td>11.66</td>
+        <td class="weight">11.66</td>
         <td class="content" data-row="fifty">9.33</td>
         <!-- <td>
           <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput2" oninput="calculateFiftyTotal()">
         </td> -->
-        <td id="fiftyPrice">$</td>
+        <td id="fiftyPrice" class="price">$</td>
       </tr>
       
       <!-- third row / quarter -->
@@ -67,12 +67,12 @@
             </div>
         </td>
         <td>$ 0.25</td>
-        <td>5.83</td>
+        <td class="weight">5.83</td>
         <td class="content" data-row="quarter">4.66</td>
         <!-- <td>
           <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput3" oninput="calculateQuarterTotal()">
         </td> -->
-        <td id="quarterPrice">$</td>
+        <td id="quarterPrice" class="price">$</td>
       </tr>
 
       <!-- fourth row / dime -->
@@ -83,12 +83,12 @@
           </div>
         </td>
         <td>$ 0.10</td>
-        <td>2.33</td>
+        <td class="weight">2.33</td>
         <td class="content" data-row="dime">1.86</td>
         <!-- <td>
           <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput4" oninput="calculateDimeTotal()">
         </td> -->
-        <td id="dimePrice">$</td>
+        <td id="dimePrice" class="price">$</td>
       </tr>
 
       <!-- fifth row / five -->
@@ -99,14 +99,14 @@
             </div>
         </td>
         <td>$ 0.05</td>
-        <td>4.54</td>
+        <td class="weight">4.54</td>
         <td>
           <input type="number" step="0.01" placeholder="e.g 1.45" inputmode="decimal" id="silverNickel" oninput="calculateCoinTotal()">
         </td>
         <!-- <td>
           <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput5" oninput="calculateNickelTotal()">
         </td> -->
-        <td id="nickelPrice">$</td>
+        <td id="nickelPrice" class="price">$</td>
       </tr>
 
       <!-- sixth row / penny -->
@@ -117,18 +117,34 @@
           </div>
         </td>
         <td>$ 0.01</td>
-        <td>3.24</td>
+        <td class="weight">3.24</td>
         <td>
           <input type="number" step="0.01" placeholder="e.g 1.45" inputmode="decimal" id="silverPenny" oninput="calculateCoinTotal()">
         </td>
         <!-- <td>
           <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput6" oninput="calculatePennyTotal()">
         </td> -->
-        <td id="pennyPrice">$</td>
+        <td id="pennyPrice" class="price">$</td>
+      </tr>
+
+      <tr>
+        <td colspan="2">Total</td>
+        <td id="totalWeight"></td>
+        <td id="totalSilver"></td>
+        <td id="totalPrice">$</td>
       </tr>
     </tbody>
-    
   </table>
+
+  <!-- calculate sums function calls -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      calculateWeightSum();
+    });
+  </script>
+  
+  <!-- live value -->
+  <h2>Live Silver Coin Value</h2>
 </body>
 
 </html>
