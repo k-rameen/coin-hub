@@ -12,21 +12,23 @@
   <script src="script.js"></script>
 
   <h1>Silver Value</h1>
-  
+
+  <!-- 80% -->
+  <h2>80% Coins</h2>
   <table>
     <!-- first row header -->
     <thead>
       <tr>
         <th>Coin</th>
         <th>Face Value</th>
-        <th>80% Coin Weight (grams)</th>
+        <th>Coin Weight (grams)</th>
         <th>Silver Content (grams)</th>
         <th>Current Silver Price (per gram)</th>
         <th>Total Price</th>
       </tr>  
     </thead>
 
-    <tbody>
+    <tbody id="body">
       <!-- first row / loonie -->
       <tr>
         <td>
@@ -142,6 +144,8 @@
       calculateWeightSum();
     });
   </script>
+
+  <button type="button" class="clear" onclick="clearTable()">Clear Table</button>
   
   <!-- live value -->
   <h2>Live Silver Coin Value</h2>
