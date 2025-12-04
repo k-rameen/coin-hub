@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Silver Value</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -36,9 +36,9 @@
         </td>
         <td>$ 1.00</td>
         <td>23.33</td>
-        <td id="content1">18.66</td>
-        <td>
-          <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput1" oninput="calculateLoonieTotal()">
+        <td class="content" data-row="loonie">18.66</td>
+        <td rowspan="6">
+          <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput" oninput="calculateCoinTotal()">
         </td>
         <td id="looniePrice">$</td>
       </tr>
@@ -52,10 +52,10 @@
         </td>
         <td>$ 0.50</td>
         <td>11.66</td>
-        <td id="content2">9.33</td>
-        <td>
+        <td class="content" data-row="fifty">9.33</td>
+        <!-- <td>
           <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput2" oninput="calculateFiftyTotal()">
-        </td>
+        </td> -->
         <td id="fiftyPrice">$</td>
       </tr>
       
@@ -68,10 +68,10 @@
         </td>
         <td>$ 0.25</td>
         <td>5.83</td>
-        <td id="content3">4.66</td>
-        <td>
+        <td class="content" data-row="quarter">4.66</td>
+        <!-- <td>
           <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput3" oninput="calculateQuarterTotal()">
-        </td>
+        </td> -->
         <td id="quarterPrice">$</td>
       </tr>
 
@@ -84,10 +84,10 @@
         </td>
         <td>$ 0.10</td>
         <td>2.33</td>
-        <td id="content4">1.86</td>
-        <td>
+        <td class="content" data-row="dime">1.86</td>
+        <!-- <td>
           <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput4" oninput="calculateDimeTotal()">
-        </td>
+        </td> -->
         <td id="dimePrice">$</td>
       </tr>
 
@@ -101,11 +101,11 @@
         <td>$ 0.05</td>
         <td>4.54</td>
         <td>
-          <input type="number" step="0.01" placeholder="e.g 1.45" inputmode="decimal" id="silverNickel" oninput="calculateNickelTotal()">
+          <input type="number" step="0.01" placeholder="e.g 1.45" inputmode="decimal" id="silverNickel" oninput="calculateCoinTotal()">
         </td>
-        <td>
+        <!-- <td>
           <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput5" oninput="calculateNickelTotal()">
-        </td>
+        </td> -->
         <td id="nickelPrice">$</td>
       </tr>
 
@@ -119,11 +119,11 @@
         <td>$ 0.01</td>
         <td>3.24</td>
         <td>
-          <input type="number" step="0.01" placeholder="e.g 1.45" inputmode="decimal" id="silverPenny" oninput="calculatePennyTotal()">
+          <input type="number" step="0.01" placeholder="e.g 1.45" inputmode="decimal" id="silverPenny" oninput="calculateCoinTotal()">
         </td>
-        <td>
+        <!-- <td>
           <input type="number" step="0.01" placeholder="e.g 2.5" inputmode="decimal" id="userInput6" oninput="calculatePennyTotal()">
-        </td>
+        </td> -->
         <td id="pennyPrice">$</td>
       </tr>
     </tbody>
