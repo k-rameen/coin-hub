@@ -11,15 +11,15 @@ table, th, td {
   padding: 5px;
 }
 
-/* to adjust column widths */
-
-
-
 /* input box size */
 input {
   field-sizing: content;
   min-width: 70px; /* Optional: set a minimum width */
   max-width: 100px; /* Optional: set a maximum width */
+}
+/* to center current silver price input */
+#userInput {
+  margin-bottom: 30px;
 }
 
 
@@ -48,4 +48,17 @@ input {
   color: rgb(255, 255, 255);
   cursor: pointer;
   margin-top: 20px;
+  width: 100px;
+  height: 50px;
+}
+
+.liveButton {
+  transition-duration: 4s;
+  border-radius: 8px;
+  background-color: rgb(89, 130, 212);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  width: 250px;
+  height: 70px;
+  font-size: 18px;
 }
