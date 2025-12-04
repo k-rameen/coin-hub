@@ -92,3 +92,22 @@ function calculateTotalPrice() {
 
   document.getElementById("totalPrice").textContent = "$" + sum.toFixed(2);
 }
+
+//clear table
+function clearTable() {
+  const nickelContent = document.getElementById("silverNickel");
+  const pennyContent = document.getElementById("silverPenny");
+  const silverPrice= document.getElementById("userInput");
+
+  if (nickelContent) {
+    nickelContent.value = "";
+  }
+
+  if (pennyContent) {
+    pennyContent.value = "";
+  }
+
+  if (silverPrice) {
+    silverPrice.value = "";
+  }
+}
