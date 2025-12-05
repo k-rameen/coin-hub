@@ -71,6 +71,10 @@ input {
   width: 250px;
   height: 70px;
   font-size: 18px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .liveButton:hover {
