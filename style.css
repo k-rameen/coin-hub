@@ -96,10 +96,12 @@ body {
 /* text */
 h1 {
   color: rgb(59, 59, 59);
+  text-align: center;
 }
 
 h2 {
   color: rgb(109, 109, 109);
+  text-align: center;
 }
 
 /* table */
