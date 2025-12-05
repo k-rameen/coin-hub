@@ -1,11 +1,14 @@
 /* table styling */
 table {
   border-collapse: collpase;
-  width:100%;
+  width: 100%;
   table-layout: fixed;
 }
-table, th, td {
-  border: 1px solid black;
+
+table,
+th,
+td {
+  border: 1px solid rgb(153, 144, 133);
   text-align: center;
   vertical-align: middle;
   padding: 5px;
@@ -14,9 +17,12 @@ table, th, td {
 /* input box size */
 input {
   field-sizing: content;
-  min-width: 70px; /* Optional: set a minimum width */
-  max-width: 100px; /* Optional: set a maximum width */
+  min-width: 70px;
+  /* Optional: set a minimum width */
+  max-width: 100px;
+  /* Optional: set a maximum width */
 }
+
 /* to center current silver price input */
 #userInput {
   margin-bottom: 30px;
@@ -42,9 +48,9 @@ input {
 /* clear button */
 
 .clear {
-  transition-duration: 4s;
+  transition-duration: 2s;
   border-radius: 8px;
-  background-color: rgb(153, 0, 3);
+  background-color: rgb(102, 0, 0);
   color: rgb(255, 255, 255);
   cursor: pointer;
   margin-top: 20px;
@@ -52,13 +58,60 @@ input {
   height: 50px;
 }
 
+.clear:hover {
+  background-color: rgb(76, 58, 46)
+}
+
 .liveButton {
-  transition-duration: 4s;
+  transition-duration: 2s;
   border-radius: 8px;
-  background-color: rgb(89, 130, 212);
+  background-color: rgb(102, 0, 0);
   color: rgb(255, 255, 255);
   cursor: pointer;
   width: 250px;
   height: 70px;
   font-size: 18px;
+}
+
+.liveButton:hover {
+  background-color: rgb(76, 58, 46)
+}
+
+/* web styling */
+
+/* background */
+body {
+  background-color: rgb(247, 245, 242);
+}
+
+.accent {
+  background-color: rgb(232, 225, 217); /* light taupe */
+  padding: 5px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+
+/* text */
+h1 {
+  color: rgb(59, 59, 59);
+}
+
+h2 {
+  color: rgb(109, 109, 109);
+}
+
+/* table */
+
+thead {
+  background-color: rgb(245, 233, 224);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(250, 247, 243);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(239, 231, 225);
 }
